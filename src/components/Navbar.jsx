@@ -1,4 +1,3 @@
-import logo from "../assets/kevinRushLogo.png";
 import { FaLinkedin } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
 import { AiFillMail } from "react-icons/ai";

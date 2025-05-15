@@ -1,7 +1,13 @@
 import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project2 from "../assets/projects/project-1-2.jpg";
+import project3 from "../assets/projects/project-1-3.jpg";
+import project4 from "../assets/projects/project-1-4.jpg";
+import project5 from "../assets/projects/SplashScreen.png";
+import project6 from "../assets/projects/FirstScreen.png";
+import project7 from "../assets/projects/MainMenu.png";
+import project8 from "../assets/projects/MyCart.png";
+import project9 from "../assets/projects/ProductDetail.png";
+import project10 from "../assets/projects/MyLocation.png";
 
 export const CONTACT = {
   address: "Jakarta, Indonesia",
@@ -33,7 +39,8 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "Rental Application",
-    image: project1,
+    image: project5,
+    images: [project6,project7,project8,project9,project10],
     description:
       "Rentalin is a community-based rental platform that connects users who need items temporarily—like calculators, exam boards, or rulers—with others willing to lend them. It helps reduce unnecessary purchases and encourages shared usage among students.",
     technologies: ["Figma", "Canva", "Whimsical"],
@@ -58,6 +65,20 @@ export const PROJECTS = [
     description:
       "A mobile application for buying and selling second-hand items like clothes and shoes. UI was designed in Figma and developed using React Native and Expo.",
     technologies: ["Figma", "React Native", "Expo", "Canva", "Whimsical", "Draw.io"],
+    features: [
+      "Item Listing",
+      "Search & Filter",
+      "User Authentication",
+      "Transaction Approval",
+      "Real-Time Notifications",  
+      "Profile Management",
+      "Ratings & Reviews",
+      "Transaction History",
+      "Image Gallery",
+    ],  
+    
+    github: "https://github.com/yourname/portfolio",
+    figma: "https://www.figma.com/file/yourfigmalink",
   },
   {
     title: "Forum Group Discussion Website",
