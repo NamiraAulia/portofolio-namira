@@ -42,7 +42,7 @@ export const PROJECTS = [
       "Search & Filter",
       "User Authentication",
       "Transaction Approval",
-      "Real-Time Notifications",
+      "Real-Time Notifications",  
       "Profile Management",
       "Ratings & Reviews",
       "Transaction History",
