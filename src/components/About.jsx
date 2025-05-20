@@ -1,27 +1,24 @@
-import aboutImg from "../assets/about.jpg";
 import { ABOUT_TEXT } from "../constants";
 import { motion } from "framer-motion";
+
 const About = () => {
   return (
-    <div className="pb-4">
-      <h2 className="my-20 text-center text-4xl">About 
-        <span className="text-purple-500"> Me</span>
+    <div className="relative pb-4">
+      <div className="absolute top-0 z-[-2]"></div>
+      
+      <h2 className="my-20 text-center text-4xl text-gray-800">
+        About <span className="text-slate-900">Me</span>
       </h2>
-      <div className="flex flex-wrap">
+      
+      <div className="flex flex-wrap justify-center">
         <motion.div 
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: -100 }}
-        transition={{ duration: 0.5 }}
-        className="w-full lg:w-1/2 lg:p-8">
-          <img className="rounded-2xl" src={aboutImg} alt="about"></img>
-        </motion.div>
-        <motion.div 
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: -100 }}
-        transition={{ duration: 0.5 }}
-        className="w-full lg:w-1/2">
-          <div className="flex justify-center lg:justify-start">
-            <p className="my-2 max-w-xl py-6">{ABOUT_TEXT}</p>
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -50 }}
+          transition={{ duration: 0.5 }}
+          className="w-full lg:w-2/3 p-4"
+        >
+          <div className="bg-white bg-opacity-80 rounded-lg p-8 shadow-lg">
+            <p className="text-black text-lg">{ABOUT_TEXT}</p>
           </div>
         </motion.div>
       </div>

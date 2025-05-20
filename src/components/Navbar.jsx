@@ -1,7 +1,6 @@
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
 import { AiFillMail } from "react-icons/ai";
-import  { FaInstagram } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -12,14 +11,22 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="m-8 flex flex-shrink-0 items-center justify-center gap-4 text-2xl">
-        <FaLinkedin />
-        <BsGithub />
-        <AiFillMail />
-        <FaInstagram />
+      <div className="m-8 flex flex-shrink-0 items-center justify-center gap-4 text-2xl text-gray-800"> {/* Changed text color */}
+        <a href="https://www.linkedin.com/in/namira-aulia-333135261/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-500 transition-colors">
+          <FaLinkedin />
+        </a>
+        <a href="https://github.com/NamiraAulia" target="_blank" rel="noopener noreferrer" className="hover:text-purple-500 transition-colors">
+          <BsGithub />
+        </a>
+        <a href="mailto:its.namiraaulia@gmail.com" className="hover:text-purple-500 transition-colors">
+          <AiFillMail />
+        </a>
+        <a href="https://www.instagram.com/your_instagram_handle/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-500 transition-colors">
+          <FaInstagram />
+        </a>
       </div>
     </nav>
   );
 }
 
-export default Navbar; 
+export default Navbar;
